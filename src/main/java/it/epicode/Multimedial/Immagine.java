@@ -21,7 +21,7 @@ public class Immagine extends ElementoMultimediale implements  Show {
     public void show() {
         System.out.println("Sto riproducendo un immagine con luminosita " + luminosita);
         for (int i = 0; i < luminosita; i++) {
-            System.out.print("*");
+            System.out.println("Immagine " +  "*".repeat(luminosita));
         }
     }
 

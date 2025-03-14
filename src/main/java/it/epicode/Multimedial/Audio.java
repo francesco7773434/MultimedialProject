@@ -27,7 +27,9 @@ public class Audio extends ElementoMultimediale implements Play {
     public void play() {
         System.out.println("Sto riproducendo un audio con volume " + volume);
         for (int i = 0; i < getDurata(); i++) {
-            System.out.print("!");
+            System.out.println(" Audio " + "!" .repeat(volume));
         }
     }
+
+
 }

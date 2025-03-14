@@ -41,10 +41,8 @@ public class Video extends ElementoMultimediale implements Play {
     public void play() {
         System.out.println("Sto riproducendo un video con volume " + volume + " e luminosita " + luminosita);
         for (int i = 0; i < getDurata(); i++) {
-            System.out.print("!");
+            System.out.println(" Video " + "!".repeat(volume) + "*".repeat(luminosita));
         }
-        for (int i = 0; i < luminosita; i++) {
-            System.out.print("*");
-        }
+
     }
 }
